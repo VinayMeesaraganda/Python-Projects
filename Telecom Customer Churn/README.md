@@ -12,5 +12,5 @@ Link : https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 # Goal 
 
 - What is the driving factor for the customer to leave/switch the company
-- which sector people should be decrease the customer churn rate
+- which sector people should be targeted to decrease the customer churn rate
 
