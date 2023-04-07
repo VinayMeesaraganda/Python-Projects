@@ -1,6 +1,6 @@
 # Patients Heart Failure Analysis
 
-In this project, we utilized the "heart_failure_clinical_records_dataset" from Kaggle and performed various data analysis techniques, 
+In this project, I utilized the "heart_failure_clinical_records_dataset" from Kaggle and performed various data analysis techniques, 
 such as data cleaning, data visualization, and data analysis using pandas, seaborn, matplotlib, and shap. 
 We then developed machine learning models with hyperparameter tuning using grid search cv after performing the SMOTE technique. 
 Finally, we compared the accuracy of the models to identify the best one for the given dataset.
