@@ -1,11 +1,35 @@
-# Indian Life Prediction
-This is my first academic project in my Masters in Data Science. This helped me learn through differnet libraries in python like pandas, seaborn , matplotlib  to perform Data cleaning and Exploratory data analysis 
-. In this project we analysed the data of Indian citizens from the dataset found in Kaggle and analysed what are the key factors effecting the life expectancy rate in India.
+# Analysis of Life Expectancy in Indian States
 
-# Goal 
-- What are the key factors affecting the Life Expectancy of People living in INDIA
+This project analyzes life expectancy data for different Indian states to gain insights.
 
-# Datasets
+## Datasets
 Links:
 - [India Life Expectancy.csv](https://github.com/VinayMeesaraganda/Python-Projects/files/11165458/India.Life.Expectancy.csv)
 - [Pollution.csv](https://github.com/VinayMeesaraganda/Python-Projects/files/11165461/Pollution.csv)
+
+
+## Data Overview
+
+The data contains:
+
+- Life expectancy, literacy rate, undernutrition data for 21 Indian states
+- Pollution data (SO2, NO2, PM10) for the states
+
+## Analysis Steps
+
+- Load and inspect the data
+- Check and handle missing values 
+- Label encode categorical features
+- Identify and remove outliers
+- Merge the two datasets
+- Explore distributions and correlations using visualizations like boxplots, pairplots, heatmaps etc.
+- Use statistical functions to analyze features
+- Implement custom functions using args and kwargs
+
+## Key Insights
+
+- Southern states like Kerala, Tamil Nadu have highest life expectancy
+- Literacy rate is positively correlated with life expectancy
+- Pollution levels are higher in landlocked states
+
+The analysis provides a good understanding of factors affecting life expectancy and their correlations. The techniques used can be applied to other datasets as well.
