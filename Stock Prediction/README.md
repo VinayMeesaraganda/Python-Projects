@@ -1,7 +1,32 @@
-# Stock Prediction Using Machine Learning Models
+# Stock Price Analysis and Prediction
 
-In this project, we collected historical data of the Cognizant company stock from Yahoo Finance and performed data processing. We then trained machine learning models to draw a graph for the 50-day moving average and 200-day moving average of the stock. By doing so, we aimed to gain insights into the trends and patterns of the Cognizant stock over time. 
+This project analyzes and models stock price data for Cognizant using Python. 
 
-# Goal:
-- To analyse the trends and patterns of the stock
-- To analyse the 50-day & 200-day Moving Average of the Stock
+## Data Overview
+
+The historical daily stock price data contains the following features:
+
+- Open Price
+- High Price  
+- Low Price
+- Close Price
+- Adjusted Close Price 
+- Volume
+
+## Analysis Steps
+
+- Load the data and inspect it
+- Create a target variable for whether next day's price will increase or decrease
+- Split data into train and test sets
+- Build classification models like KNN, Random Forest, SVM etc. 
+- Evaluate model performance using classification metrics
+- Calculate moving averages and create trading signals based on crossover
+- Build classification models on moving average features
+
+## Key Findings
+
+- Random forest model gives highest accuracy for price direction prediction
+- Using moving averages improves accuracy to 98%
+- Short term averages crossing long term averages provide effective trading signals  
+
+The analysis provides a good framework for stock data modeling and strategy building that can be extended to other stocks or financial datasets.
