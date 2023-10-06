@@ -1,24 +1,34 @@
-# Employee Turnover Analysis
+# Understanding and Predicting Employee Turnover
 
-In this project, we utilized the HR data and performed various data analysis techniques, 
-such as data cleaning, data processing, and Exploratory data analysis using pandas, seaborn, matplotlib.
-We then developed machine learning models and compared the accuracy of the models to identify the best one for the given dataset.
+This project analyzes employee data to understand factors contributing to turnover and builds a model to predict likelihood of employee turnover.
 
-# Goal 
-- To understand what factors contributed most to employee turnover.
-- To perform clustering to find any meaningful patterns of employee traits.
-- To create a model that predicts the likelihood if a certain employee will leave the company or not.
-- To create or improve different retention strategies on targeted employees.
-
-# Dataset
+## Dataset
 
 Link : [HR-data.csv](https://github.com/VinayMeesaraganda/Python-Projects/files/11165153/HR-data.csv)
 
-# Insights
+## Data Overview
 
-- Employees who had really low satisfaction levels (0.2 or less) left the company more
-- Employees who had really high satisfaction levels (0.7 or more) left the company more
-- There is an increase in employee turnover rate as project count increases
-- Employees who had less hours of work (~150hours or less) left the company more
-- Employees who had too many hours of work (~250 or more) left the company
-- Employees who left generally were underworked or overworked.
+The data contains 14,999 employee records with the following features:
+
+- Satisfaction Level 
+- Last Evaluation Score
+- Number of Projects  
+- Average Monthly Hours
+- Years at the Company
+- Work Accident (1 - Yes, 0 - No)  
+- Left Job (Target Variable)
+- Promotion in Last 5 Years
+- Department 
+- Salary
+
+## Analysis
+
+- Performed exploratory analysis to understand distributions and correlations
+- Average satisfaction is lower and evaluation scores are higher for employees who left
+- Clustering reveals 3 categories of leavers: unsatisfied, underperforming, and high achievers
+- Logistic regression model achieves 56% F1 score after SMOTE oversampling
+- Random forest model achieves 97% F1 score after SMOTE oversampling 
+
+## Conclusion
+
+The random forest model accurately predicts employee turnover. It can be used to identify employees likely to leave so retention incentives can be offered. Important features are number of projects, monthly hours and evaluation scores.
